@@ -183,7 +183,7 @@ d3.json(url).then(d => {
 		.on("mouseover", function(d, i) {
 			tooltip.style("opacity", 0.9);
 			tooltip.html(
-				"<div><span>" + d.Name + "</span> (" + d.Nationality + ")<br><span>Year:</span> " + d.Year + "<br><span>Time:</span> " + d.Time + "<br>" + d.Doping + "<br>" + d.URL + "</div>"
+				"<div><span>" + d.Name + "</span> (" + d.Nationality + ")<br><span>Year:</span> " + d.Year + "<br><span>Time:</span> " + d.Time + "<br>" + d.Doping + "<br><span>Source:</span> " + d.URL + "</div>"
 			)
 			.attr("data-year", d.Year)
 			.style("left", (d3.event.pageX) + "px")
