@@ -9,18 +9,20 @@ body {
   background-size: cover;
 }
 
-.chart-div {
-  width: 80vw;
+#chart {
+  width: 90vw;
   height: 80vh;
-  background-color: rgba(132, 112, 67, 0.95);
-  border-radius: 10px;
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
   display: block;
   margin: 0 auto;
+}
+
+.tooltip {
+  font-size: 0.6em;
+  font-weight: bold;
 }
 
 footer p {
   text-align: center;
   font-weight: bold;
-  padding-top: 70px;
+  padding: 40px 0;
 }
