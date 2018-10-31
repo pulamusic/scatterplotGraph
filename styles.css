@@ -1,0 +1,26 @@
+body {
+  font-family: "Open Sans Condensed", sans-serif;
+  font-size: 20px;
+  margin: 0;
+  padding: 0;
+  background-color: #b6b7d8;
+  background-image: url("images/bicyclist.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.chart-div {
+  width: 80vw;
+  height: 80vh;
+  background-color: rgba(132, 112, 67, 0.95);
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  display: block;
+  margin: 0 auto;
+}
+
+footer p {
+  text-align: center;
+  font-weight: bold;
+  padding-top: 70px;
+}
