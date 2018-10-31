@@ -54,14 +54,18 @@ d3.json(url).then(d => {
 	// *********************Tooltip information*********************
 	let name = []
 	let nationality = []
+	let year = []
 	let time = []
 	let doping = []
+	let url = []
 
 	for (let i = 0; i < d.length; i++) {
 		name.push(d[i].Name)
 		nationality.push(d[i].Nationality)
+		year.push(d[i].Year)
 		time.push(d[i].Time)
 		doping.push(d[i].Doping)
+		url.push(d[i].URL)
 	}
 
 	// *******************Tooltip background**********************
@@ -69,11 +73,6 @@ d3.json(url).then(d => {
 		.append("div")
 		.attr("id", "tooltip")
 		.attr("class", "tooltip")
-		.attr("width", "200px")
-		.style("position", "absolute")
-		.style("padding", "5px 10px")
-		.style("background", "#96A8A8")
-		.style("border-radius", "10px")
 		.style("opacity", 0)
 		.style("cursor", "pointer")
 
@@ -184,7 +183,7 @@ d3.json(url).then(d => {
 		.on("mouseover", function(d, i) {
 			tooltip.style("opacity", 0.9);
 			tooltip.html(
-				"<div>" + d.Name + " (" + d.Nationality + ")<br>Time: " + d.Time + "<br>" + d.Doping +"</div>"
+				"<div><span>" + d.Name + "</span> (" + d.Nationality + ")<br><span>Year:</span> " + d.Year + "<br><span>Time:</span> " + d.Time + "<br>" + d.Doping + "<br>" + d.URL + "</div>"
 			)
 			.attr("data-year", d.Year)
 			.style("left", (d3.event.pageX) + "px")

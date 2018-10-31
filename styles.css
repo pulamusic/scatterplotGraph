@@ -17,12 +17,21 @@ body {
 }
 
 .tooltip {
+  width: 200px;
+  position: absolute;
+  padding: 10px;
+  background-color: #96a8a8;
+  border-radius: 10px;
   font-size: 0.6em;
+}
+
+.tooltip span {
   font-weight: bold;
 }
 
 footer p {
   text-align: center;
+  font-size: 1.2em;
   font-weight: bold;
   padding: 40px 0;
 }
